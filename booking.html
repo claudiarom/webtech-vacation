@@ -1,6 +1,46 @@
-<h2 style="background-color:rgb(235, 116, 195)"> Book a vacation </h2>
-<form method="post" action="book_a_vacation.php">
-    <p> 
+<!DOCTYPE html>
+<html lang="en">
+<form method="get" action="book_a_vacation.php">
+<head>
+    <style> 
+        header {
+            text-align: center;
+        }
+        h1 {
+            font-size: 400%; 
+            color: rgb(235, 116, 195);
+            background-color: black;
+            width: 100%;
+            text-shadow: 7px; 
+        }
+        h1::first-letter {
+            color: purple
+        }
+        #p1 {
+            font-size: 160%;
+            background-color:rgb(235, 116, 195); 
+            width: 100%;
+        }
+        #p7 {
+            font-size: 160%;
+            padding: 3px;
+        }
+        body {
+            background-color: rgb(123, 236, 217);
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin-left: 10em;
+            margin-right: 10em;
+        }
+    </style>
+</head>
+<body> 
+<h1> <b>BOOK A VACATION</b> </h1>
+<img src="cherry.jpg" alt="cherry">
+<p id="p1"> 
+    Benvenuti nel sito di prenotazione viaggi!
+</p>
+<p> 
     <label><b>LOCATION</b> <select name="location" autofocus>
         <option value=""> Choose a location </option>
         <option value="Cuba"> Cuba </option>
@@ -229,13 +269,17 @@
     <label> <input type="checkbox" name="remember me"> Remember me </label>
     </p>    
     <p>
-    
     <label> <b>Payment</b> <input type="radio" name="payment" value="credit card"> Credit card </label>
     <label> <input type="radio" name="payment" value="paypal"> Paypal </label>
     <label> <input type="radio" name="payment" value="bank transfer"> Cash </label>
     </p>
     <p>
-    <label> <input style="background-color:rgb(235, 116, 195)" type="submit" value= "Book your vacation"></label>
+    <label> <input style="background-color:rgb(235, 116, 195)" style="font-size: 150%" type="submit" value= "Book your vacation"></label>
     <label> <input style="background-color:rgb(231, 202, 228)" type="reset" value="Ok"></label>
     </p>
+    <p>
+    <label>Colors<input type="color" name ="colors"> </label> <label><input type="search" name ="search"></label>   
+    </p>
+</body>   
 </form>
+</html>
